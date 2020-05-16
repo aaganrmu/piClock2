@@ -1,0 +1,20 @@
+Startup script:
+sudo nano /etc/rc.local
+
+
+AFP:
+https://pimylifeup.com/raspberry-pi-afp/
+sudo apt installl netatalk
+sudo nano /etc/netatalk/afp.conf
+================
+[Homes]
+basedir regex = /home
+================
+open afp://M99.local
+Assuming M99 is device name
+
+
+OLED display:
+sudo pip install Adafruit-SSD1306
+or (?)
+pip install --user Adafruit-SSD1306

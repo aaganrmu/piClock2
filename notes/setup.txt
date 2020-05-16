@@ -1,0 +1,10 @@
+Use imager to install Raspbian Lite
+
+Add file 'ssh' on boot partition to enable ssh
+
+Edit /etc/wpa_supplicant/wpa_supplicant.conf and add
+
+network={
+	ssid="SSID"
+	psk="PASSWORD"
+}
