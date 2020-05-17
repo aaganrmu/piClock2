@@ -1,4 +1,4 @@
-Startup script:
+\Startup script:
 sudo nano /etc/rc.local
 
 
@@ -18,3 +18,10 @@ OLED display:
 sudo pip install Adafruit-SSD1306
 or (?)
 pip install --user Adafruit-SSD1306
+
+pip install Pillow
+
+sudo apt-get install libopenjp2-7
+sudo apt install libtiff5
+sudo apt-get install python-rpi.gpio
+enable IC2 in raspi-config
