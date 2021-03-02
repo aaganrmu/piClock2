@@ -9,7 +9,7 @@ HEIGHT = 32
 
 oled_reset = digitalio.DigitalInOut(board.D4)
 i2c = board.I2C()
-oled = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c, reset=oled_reset)
+oled = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c, addr=0x3c, reset=oled_reset)
 
 oled.fill(0)
 oled.show()
