@@ -1,3 +1,28 @@
+Always do:
+
+- Install pip & add to path:
+
+sudo apt-get install python3-distutils
+python3 get-pip.py
+
+create ~/.bash_profile and add
+export PATH="$PATH:/home/pi/.local/bin"
+
+- Add OLED stuff:
+
+sudo apt-get install python3-dev python3-pip
+pip3 install adafruit-circuitpython-SSD1360
+
+sudo apt-get install python3-pil
+
+sudo nano /boot/config.txt
+add dtparam=i2c_baudrate=1000000
+
+
+
+
+=====
+
 \Startup script:
 sudo nano /etc/rc.local
 
