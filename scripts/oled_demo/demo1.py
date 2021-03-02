@@ -22,3 +22,6 @@ shape_outer = (line_width, line_width, oled.width - line_width - 1, oled.height 
 
 draw.rectangle(shape_outer, outline=255, fill=255)
 draw.rectangle(shape_inner, outline=0, fill=0)
+
+oled.image(image)
+oled.show()
