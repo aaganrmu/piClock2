@@ -1,0 +1,6 @@
+sudo bluetoothctl
+
+scan on
+pair MA:CA:DD:RE:S1
+trust ...
+connect ...
