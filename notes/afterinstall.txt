@@ -11,19 +11,20 @@ export PATH="$PATH:/home/pi/.local/bin"
 - Add OLED stuff:
 
 sudo apt-get install python3-dev python3-pip
-pip3 install adafruit-circuitpython-SSD1360
-
 sudo apt-get install python3-pil
 
 sudo nano /boot/config.txt
 add dtparam=i2c_baudrate=1000000
 
 
+go to Adafruit_Python_SSD1306 folder and do
+sudo python3 setup.py install
 
+test with stats2 program
 
 =====
 
-\Startup script:
+Startup script:
 sudo nano /etc/rc.local
 
 
@@ -39,14 +40,4 @@ open afp://M99.local
 Assuming M99 is device name
 
 
-OLED display:
-sudo pip install Adafruit-SSD1306
-or (?)
-pip install --user Adafruit-SSD1306
 
-pip install Pillow
-
-sudo apt-get install libopenjp2-7
-sudo apt install libtiff5
-sudo apt-get install python-rpi.gpio
-enable IC2 in raspi-config
