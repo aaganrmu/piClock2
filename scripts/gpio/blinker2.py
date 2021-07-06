@@ -1,18 +1,18 @@
 import RPi.GPIO as GPIO
 from time import sleep
 
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 
-led = 17
+led_pin = 12
 
-GPIO.setup(led, GPIO.OUT)
+GPIO.setup(led_pin, GPIO.OUT)
 
 timer = 0.003
 try: 
     while True:
-        GPIO.output(led, 1)
+        GPIO.output(led_pin, 1)
         sleep(timer)
-        GPIO.output(led, 0)
+        GPIO.output(led_pin, 0)
         sleep(timer * 3)
 finally:
     GPIO.cleanup()
