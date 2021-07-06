@@ -82,7 +82,13 @@ def draw_faster(item):
     disp.image(image)
     disp.display()
 
+def clear_screen():
+    draw.rectangle(rectangle, outline=0, fill=0)
+    disp.image(image)
+    disp.display()
 
-time_now = datetime.now()
-while True:
-    draw_screen()
+try:
+    while True:
+        draw_screen()
+finally:
+    clear_screen()
