@@ -1,0 +1,14 @@
+[Unit]
+Descripion=Simple gpio service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 -u gpio_service.py 
+WorkingDirectory=/home/pi/git/piClock2/scripts/service
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
